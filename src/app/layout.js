@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className={spaceGrotesk.className}>
         <div className=" bg-[#111204]">
           <Navbar />
-          <div className=" container mx-auto 2xl:px-20 xl:px-10 px-2">
+          <div className=" container mx-auto 2xl:px-20 xl:px-10 px-2 z-[10]">
             {children}
           </div>
           <Footer />
