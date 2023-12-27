@@ -1,5 +1,7 @@
-import ServiceCard from "@/app/components/card/ServiceCard";
-
+import { BiCodeAlt } from "react-icons/bi";
+import TitleBox from "@/app/components/sheard/TitleBox";
+import Button from "@/app/components/sheard/button/Button";
+import ServiceCard from "@/app/components/sheard/card/ServiceCard";
 
 export default function Services() {
 
@@ -32,19 +34,17 @@ export default function Services() {
     ];
 
     return (
-        <div className="z-[10] relative">
-            <div className=" text-center">
-                <p className=" text-lime-400 text-xl font-medium border border-green-300 inline-block px-5 skew-y-6 mb-3">Our Services</p>
-                <h1 className=" w-8/12 mx-auto text-5xl text-white  my-4">Exceptional Service<span className="text-lime-400">,</span> Digital Solutions For You.</h1>
-                <div className=" h-[2px] bg-lime-400 mt-1.5 w-2/6 mx-auto"></div>
-            </div>
-
+        <div className="z-[10] relative pt-10">
+            <TitleBox tag='Our Services' title1='Exceptional Service' title2='Digital Solutions For You' />
             <div className=" grid grid-cols-5 py-12">
                 {
                     services?.map(service => <ServiceCard key={service?.id} service={service} />)
                 }
             </div>
 
+            <div className=' flex justify-center mt-5'>
+                <Button type='button' text='See More Services' isFill={false} icon={<BiCodeAlt />} />
+            </div>
         </div>
     )
 }

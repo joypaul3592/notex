@@ -2,6 +2,7 @@ import Image from 'next/image'
 import aboutImg from '../../assets/image/about/about1.png'
 import aboutImg2 from '../../assets/image/about/about2.png'
 import { TbCheckbox } from "react-icons/tb";
+import TitleBox from '@/app/components/sheard/TitleBox';
 
 export default function About() {
     const benefitsArray = [
@@ -21,11 +22,7 @@ export default function About() {
 
     return (
         <div className=" pb-12 pt-32 z-[10] relative">
-            <div className=" text-center">
-                <p className=" text-lime-400 text-xl font-medium border border-green-300 inline-block px-5 skew-y-6">About Us</p>
-                <h1 className=" w-8/12 mx-auto text-5xl text-white  my-4">Decoding Notex<span className="text-lime-400">,</span> About Your Tech Company</h1>
-                <div className=" h-[2px] bg-lime-400 mt-1.5 w-2/6 mx-auto"></div>
-            </div>
+            <TitleBox tag='About Us' title1='Decoding Notex' title2='About Your Tech Company' />
 
             <div className='flex items-start gap-10 py-10 mt-16'>
                 <div className=' relative w-1/2'>
