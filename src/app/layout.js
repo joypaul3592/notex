@@ -1,8 +1,9 @@
+
 import { Space_Grotesk } from "next/font/google";
 import "./assets/styles/globals.css";
 import Navbar from "./components/sheard/common/navbar/Navbar";
 import Footer from "./components/sheard/common/footer/Footer";
-
+import AOSInit from "./AOSInit";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata = {
@@ -13,6 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <AOSInit />
       <body className={spaceGrotesk.className}>
         <div className=" bg-[#111204]">
           <Navbar />

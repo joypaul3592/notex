@@ -13,7 +13,9 @@ import { MdOutlineAddIcCall } from "react-icons/md";
 export default function Navbar() {
     const [open, setOpen] = useState(false)
     return (
-        <div className="bg-[#111204] sticky top-0 z-[100] bg-opacity-50 backdrop-blur-lg">
+        <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000" className="bg-[#111204] sticky top-0 z-[100] bg-opacity-50 backdrop-blur-lg">
             <div className='container mx-auto 2xl:px-20 xl:px-10 px-2 py-3 flex items-center justify-between '>
                 <CgMenuLeft onClick={() => setOpen(true)} className=' text-2xl text-[#B9FD50] cursor-pointer md:hidden' />
                 <Logo />

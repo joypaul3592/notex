@@ -16,25 +16,23 @@ export default function About() {
         { id: 8, name: "Transparent Communication" },
         { id: 9, name: "Customized Solutions" },
         { id: 10, name: "Proactive Problem Solving" },
-        { id: 11, name: "Documentation and Support" },
-        { id: 12, name: "Scalability for Future Growth" },
     ];
 
     return (
         <div className=" pb-12 pt-32 z-[10] relative">
             <TitleBox tag='About Us' title1='Decoding Notex' title2='About Your Tech Company' />
 
-            <div className='flex items-start gap-10 py-10 mt-16'>
-                <div className=' relative w-1/2'>
-                    <Image src={aboutImg} alt='aboutImg' className=' w-full' />
-                    <Image src={aboutImg2} alt='aboutImg' className=' w-32 absolute -top-10 left-12 opacity-80' />
+            <div className='xl:flex 2xl:items-start items-center gap-10 py-10 mt-16'>
+                <div className=' relative xl:w-1/2'>
+                    <Image data-aos="fade-up-left" src={aboutImg} alt='aboutImg' className=' w-full' />
+                    <Image data-aos="fade-right" src={aboutImg2} alt='aboutImg' className=' w-32 absolute -top-10 left-12 opacity-80' />
                 </div>
-                <div className='w-1/2'>
-                    <h1 className=' text-3xl font-medium text-lime-400'>What is Notex ?</h1>
-                    <p className=' text-gray-300 mt-2 text-justify'>
+                <div className='xl:w-1/2 mt-10 xl:mt-0 md:px-12 xl:px-0'>
+                    <h1 data-aos="fade-right" className=' text-3xl font-medium text-lime-400'>What is Notex ?</h1>
+                    <p data-aos="zoom-in-up" className=' text-gray-300 mt-2 text-justify'>
                         Notex is a cutting-edge <span className=' text-lime-400 font-medium'>software company</span> dedicated to delivering innovative and tailored digital solutions. Specializing in <span className=' text-lime-400 font-medium'>full-stack development</span>, we harness the power of technologies such as React, Node.js, and MongoDB to craft seamless applications. Our passion lies in transforming concepts into exceptional, user-centric <span className=' text-lime-400 font-medium'>software experiences</span>.</p>
 
-                    <div className=' text-white grid grid-cols-2 gap-x-12 gap-y-2 mt-5'>
+                    <div data-aos="zoom-out" className=' text-white grid sm:grid-cols-2 2xl:gap-x-12 gap-x-2 gap-y-3 mt-7'>
                         {
                             benefitsArray?.map(benefit => <div className='flex items-center gap-2' key={benefit?.id}>
                                 <TbCheckbox className=' text-lime-400' /> <p className=' hover:text-lime-400 cursor-pointer'>{benefit?.name}</p>
