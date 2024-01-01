@@ -42,7 +42,7 @@ export default function Services() {
                 }
             </div>
 
-            <div data-aos="zoom-out-right" className=' flex justify-center mt-5'>
+            <div data-aos="zoom-in" className=' flex justify-center mt-5'>
                 <Button type='button' text='See More Services' isFill={false} icon={<BiCodeAlt />} />
             </div>
         </div>

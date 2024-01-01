@@ -24,11 +24,11 @@ export default function About() {
 
             <div className='xl:flex 2xl:items-start items-center gap-10 py-10 mt-16'>
                 <div className=' relative xl:w-1/2'>
-                    <Image data-aos="fade-up-left" src={aboutImg} alt='aboutImg' className=' w-full' />
-                    <Image data-aos="fade-right" src={aboutImg2} alt='aboutImg' className=' w-32 absolute -top-10 left-12 opacity-80' />
+                    <Image data-aos="fade-up" src={aboutImg} alt='aboutImg' className=' w-full' />
+                    <Image data-aos="fade-dowm" src={aboutImg2} alt='aboutImg' className=' w-32 absolute -top-10 left-12 opacity-80' />
                 </div>
                 <div className='xl:w-1/2 mt-10 xl:mt-0 md:px-12 xl:px-0'>
-                    <h1 data-aos="fade-right" className=' text-3xl font-medium text-lime-400'>What is Notex ?</h1>
+                    <h1 data-aos="fade-down" className=' text-3xl font-medium text-lime-400'>What is Notex ?</h1>
                     <p data-aos="zoom-in-up" className=' text-gray-300 mt-2 text-justify'>
                         Notex is a cutting-edge <span className=' text-lime-400 font-medium'>software company</span> dedicated to delivering innovative and tailored digital solutions. Specializing in <span className=' text-lime-400 font-medium'>full-stack development</span>, we harness the power of technologies such as React, Node.js, and MongoDB to craft seamless applications. Our passion lies in transforming concepts into exceptional, user-centric <span className=' text-lime-400 font-medium'>software experiences</span>.</p>
 
