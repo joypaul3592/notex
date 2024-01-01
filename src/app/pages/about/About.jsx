@@ -20,7 +20,7 @@ export default function About() {
 
     return (
         <div className=" pb-12 pt-32 z-[10] relative">
-            <TitleBox tag='About Us' title1='Decoding Notex' title2='About Your Tech Company' />
+            {/* <TitleBox tag='About Us' title1='Decoding Notex' title2='About Your Tech Company' /> */}
 
             <div className='xl:flex 2xl:items-start items-center gap-10 py-10 mt-16'>
                 <div className=' relative xl:w-1/2'>
@@ -32,7 +32,7 @@ export default function About() {
                     <p data-aos="zoom-in-up" className=' text-gray-300 mt-2 text-justify'>
                         Notex is a cutting-edge <span className=' text-lime-400 font-medium'>software company</span> dedicated to delivering innovative and tailored digital solutions. Specializing in <span className=' text-lime-400 font-medium'>full-stack development</span>, we harness the power of technologies such as React, Node.js, and MongoDB to craft seamless applications. Our passion lies in transforming concepts into exceptional, user-centric <span className=' text-lime-400 font-medium'>software experiences</span>.</p>
 
-                    <div data-aos="zoom-out" className=' text-white grid sm:grid-cols-2 2xl:gap-x-12 gap-x-2 gap-y-3 mt-7'>
+                    <div data-aos="fade-up" className=' text-white grid sm:grid-cols-2 2xl:gap-x-12 gap-x-2 gap-y-3 mt-7'>
                         {
                             benefitsArray?.map(benefit => <div className='flex items-center gap-2' key={benefit?.id}>
                                 <TbCheckbox className=' text-lime-400' /> <p className=' hover:text-lime-400 cursor-pointer'>{benefit?.name}</p>

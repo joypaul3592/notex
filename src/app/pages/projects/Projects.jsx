@@ -12,7 +12,7 @@ export default function Projects() {
         <div className="z-[10] relative pt-28 pb-10">
             <TitleBox tag='Our Projects' title1='A Pictorial Journey ' title2='Through Our Projects' />
             <div className=" mt-10 flex flex-wrap items-center justify-center gap-14 py-10 lg:px-40">
-                <div data-aos="zoom-out-down" className=" 2xl:w-[47%] sm:w-[45%] relative group cursor-pointer ">
+                <div data-aos="fade-down" className=" 2xl:w-[47%] sm:w-[45%] relative group cursor-pointer ">
                     <div className="rounded-xl overflow-hidden">
                         <Image src={project1} alt="project1" className="transition-all ease-linear duration-200  group-hover:scale-110" />
                     </div>
@@ -41,7 +41,7 @@ export default function Projects() {
                         <BiCodeAlt className=" cursor-pointer hover:text-white" />
                     </div>
                 </div>
-                <div data-aos="zoom-in-up" className=" 2xl:w-[47%] sm:w-[45%] relative group cursor-pointer ">
+                <div data-aos="fade-up" className=" 2xl:w-[47%] sm:w-[45%] relative group cursor-pointer ">
                     <div className="rounded-xl overflow-hidden">
                         <Image src={project2} alt="project1" className="transition-all ease-linear duration-200  group-hover:scale-110" />
                     </div>
@@ -69,7 +69,7 @@ export default function Projects() {
                         <BiCodeAlt className=" cursor-pointer hover:text-white" />
                     </div>
                 </div>
-                <div data-aos="zoom-out-up" className=" 2xl:w-[47%] sm:w-[45%] relative group cursor-pointer ">
+                <div data-aos="fade-down" className=" 2xl:w-[47%] sm:w-[45%] relative group cursor-pointer ">
                     <div className="rounded-xl overflow-hidden">
                         <Image src={project3} alt="project1" className="transition-all ease-linear duration-200  group-hover:scale-110" />
                     </div>
@@ -100,7 +100,7 @@ export default function Projects() {
                 </div>
             </div>
 
-            <div data-aos="fade-right" className=' flex justify-center mt-5'>
+            <div data-aos="fade-down" className=' flex justify-center mt-5'>
                 <Button type='button' text='See More Projects' isFill={false} icon={<BiCodeAlt />} />
             </div>
         </div>
